@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cyber security platform for Website Scanner, Sniper Auto-Exploiter, and SQLi Exploiter."
+    />
+    <title>Cyber Security Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="container nav">
+          <div class="brand" aria-label="Cipher Security home">
+            <div class="brand-mark">C</div>
+            <span>CIPHER</span>
+          </div>
+
+          <nav class="nav-links" aria-label="Main navigation">
+            <a href="#products">Products</a>
+            <a href="#scanner">Website Scanner</a>
+            <a href="#sniper">Sniper</a>
+            <a href="#sqli">SQLi Exploiter</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <div class="nav-actions">
+            <button class="btn btn-ghost">Log in</button>
+            <button class="btn btn-primary">Book Demo</button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero container">
+          <div class="hero-copy">
+            <div class="eyebrow">Enterprise Application Security</div>
+            <h1>See your web app the way attackers do.</h1>
+            <p>
+              Detect vulnerabilities faster with deep scanning, exploit validation,
+              and actionable evidence designed for modern web applications and
+              complex API ecosystems.
+            </p>
+
+            <div class="hero-actions">
+              <button class="btn btn-primary">Scan Application</button>
+              <button class="btn btn-secondary">View Platform</button>
+            </div>
+
+            <div class="trust-row" aria-label="Key statistics">
+              <div>
+                <strong>75+</strong>
+                <span>Web vulnerabilities</span>
+              </div>
+              <div>
+                <strong>DAST</strong>
+                <span>Dynamic testing</span>
+              </div>
+              <div>
+                <strong>24/7</strong>
+                <span>Attack surface coverage</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Security dashboard preview">
+            <div class="panel dashboard-panel">
+              <div class="panel-header">
+                <span class="dot red"></span>
+                <span class="dot amber"></span>
+                <span class="dot green"></span>
+              </div>
+
+              <div class="scan-summary">
+                <div>
+                  <span class="label">Attack Surface</span>
+                  <strong>1,284</strong>
+                </div>
+                <div class="status-positive">
+                  <span class="status-pill">Live</span>
+                </div>
+              </div>
+
+              <div class="trend-bars" aria-hidden="true">
+                <span style="height: 35%"></span>
+                <span style="height: 48%"></span>
+                <span style="height: 62%"></span>
+                <span style="height: 72%"></span>
+                <span style="height: 88%"></span>
+                <span style="height: 100%"></span>
+              </div>
+
+              <div class="finding-list">
+                <div class="finding-row">
+                  <div>
+                    <span class="finding-tag tag-red">Critical</span>
+                    <p>SQL Injection</p>
+                  </div>
+                  <strong>9</strong>
+                </div>
+                <div class="finding-row">
+                  <div>
+                    <span class="finding-tag tag-amber">High</span>
+                    <p>Reflected XSS</p>
+                  </div>
+                  <strong>17</strong>
+                </div>
+                <div class="finding-row">
+                  <div>
+                    <span class="finding-tag tag-green">Medium</span>
+                    <p>Info Disclosure</p>
+                  </div>
+                  <strong>22</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="products" class="container section">
+          <div class="section-heading">
+            <div class="eyebrow">Solutions</div>
+            <h2>Security testing built for the web.</h2>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card card-feature">
+              <div class="icon-wrap icon-blue">W</div>
+              <h3>Website Scanner</h3>
+              <p>
+                Web application security testing with active and passive
+                vulnerability detection.
+              </p>
+              <ul>
+                <li>DAST crawling and reconnaissance</li>
+                <li>Technology fingerprinting</li>
+                <li>Live exploit validation</li>
+              </ul>
+            </article>
+
+            <article class="product-card card-feature">
+              <div class="icon-wrap icon-cyan">S</div>
+              <h3>Sniper</h3>
+              <p>
+                Auto-exploiter for known vulnerabilities and evidence collection.
+              </p>
+              <ul>
+                <li>Automated exploit chaining</li>
+                <li>Artifact extraction</li>
+                <li>Compromise reporting</li>
+              </ul>
+            </article>
+
+            <article class="product-card card-feature">
+              <div class="icon-wrap icon-purple">SQL</div>
+              <h3>SQLi Exploiter</h3>
+              <p>
+                Confirm SQL injection and extract database contents with detailed
+                validation.
+              </p>
+              <ul>
+                <li>SQLMap-backed analysis</li>
+                <li>Injection point mapping</li>
+                <li>Database evidence reports</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="scanner" class="feature-band">
+          <div class="container feature-layout">
+            <div class="feature-copy">
+              <div class="eyebrow accent">Website Scanner</div>
+              <h2>Continuous DAST coverage for real-world web apps.</h2>
+              <p>
+                The Website Scanner performs security testing of web
+                applications. It crawls your application, identifies
+                technologies, and tests for vulnerabilities through active
+                payload injection and passive response analysis.
+              </p>
+              <ul class="check-list">
+                <li>Discovers hidden endpoints, JavaScript-heavy routes, and SPAs</li>
+                <li>Detects SQL injection, XSS, command injection, XXE, and 75+ more</li>
+                <li>Delivers prioritized risks with screenshots and attack replays</li>
+              </ul>
+            </div>
+
+            <div class="feature-stat-box">
+              <div class="mini-card">
+                <span class="label">Crawl Coverage</span>
+                <strong>98.4%</strong>
+              </div>
+              <div class="mini-card">
+                <span class="label">Findings</span>
+                <strong>146</strong>
+              </div>
+              <div class="mini-card emphasis">
+                <span class="label">Scan Time</span>
+                <strong>03:42</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="container section two-column">
+          <div class="detail-panel" id="sniper">
+            <div class="eyebrow accent">Sniper: Auto-Exploiter</div>
+            <h3>Automatically exploit known vulnerabilities.</h3>
+            <p>
+              Sniper is an automated exploitation tool that identifies and
+              exploits known vulnerabilities in widely-deployed software. After a
+              successful exploit, it automatically extracts artifacts such as
+              system information, users, and network data as evidence of
+              compromise.
+            </p>
+            <ul class="check-list compact">
+              <li>Exploit known weaknesses in deployed software</li>
+              <li>Extract evidence of compromise automatically</li>
+              <li>Produce structured reports for incident response</li>
+            </ul>
+          </div>
+
+          <div class="detail-panel" id="sqli">
+            <div class="eyebrow accent">SQLi Exploiter</div>
+            <h3>Validate injection flaws and recover data from databases.</h3>
+            <p>
+              The SQLi Exploiter confirms SQL injection vulnerabilities and
+              extracts data from databases to demonstrate impact. It provides a
+              web interface for SQLMap, the industry-standard SQL injection
+              exploitation tool.
+            </p>
+            <ul class="check-list compact">
+              <li>Validate injection points with proof of exploitability</li>
+              <li>Access database contents in controlled security testing</li>
+              <li>Generate detailed reports with evidence and context</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="container section process-section">
+          <div class="section-heading center">
+            <div class="eyebrow">Workflow</div>
+            <h2>From discovery to remediation.</h2>
+          </div>
+
+          <div class="timeline">
+            <div class="step">
+              <span>01</span>
+              <h4>Discover</h4>
+              <p>Crawl the application and map attack surface and technologies.</p>
+            </div>
+            <div class="step">
+              <span>02</span>
+              <h4>Test</h4>
+              <p>Run active payload injections and passive response validation.</p>
+            </div>
+            <div class="step">
+              <span>03</span>
+              <h4>Verify</h4>
+              <p>Confirm exploitability with evidence and screenshots.</p>
+            </div>
+            <div class="step">
+              <span>04</span>
+              <h4>Fix</h4>
+              <p>Prioritize remediation with actionable developer guidance.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="cta-band" id="contact">
+          <div class="container cta-box">
+            <div>
+              <div class="eyebrow accent">Ready to secure your app?</div>
+              <h2>Build a stronger security posture with continuous testing.</h2>
+            </div>
+            <button class="btn btn-primary">Request a Demo</button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer container">
+        <div class="brand footer-brand">
+          <div class="brand-mark">C</div>
+          <span>CIPHER</span>
+        </div>
+        <p>© <span id="year"></span> Cipher Security. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
